@@ -1,0 +1,24 @@
+
+=> symbol table
+# name                  sec  scope   value     num   size
+  text                	1    local   00000000  1     0006
+  data                	2    local   00000000  2     000c
+  _start              	2    global  00000000  3     
+  pom                 	1    local   00000002  4     
+
+
+=> classification index table
+# symbol                     section   index   expression
+
+
+=> .text
+aa aa dd cc bb bb 
+
+=> .data
+64 6e ff ff 22 4c 6e 00 00 54 24 04 
+
+
+=> .rel .data
+#  offset    relType        ref   sign   size
+   00000002  R_386_PC16     1      +      2
+   00000007  R_386_PC16     1      +      2
