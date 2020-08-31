@@ -1,0 +1,33 @@
+
+=> symbol table
+# name                  sec  scope   value     num   size
+  ivt                 	1    local   00000000  1     0059
+  _start              	0    global  00000000  2     
+  ivt_0               	1    global  00000000  3     
+  ivt_1               	1    global  00000005  4     
+  ivt_2               	1    global  00000053  5     
+  ivt_3               	1    global  00000054  6     
+  ivt_4               	1    global  00000055  7     
+  ivt_5               	1    global  00000056  8     
+  ivt_6               	1    global  00000057  9     
+  ivt_7               	1    global  00000058  10     
+~ timer_cfg           	0    global  0000ff10  11     
+~ data_out            	0    global  0000ff00  12     
+~ data_in             	0    global  0000ff02  13     
+
+
+=> classification index table
+# symbol                     section   index   expression
+
+
+=> .ivt
+4c 00 00 00 0c 64 00 45 00 80 00 ff 64 00 52 00 80 00 ff 64 
+00 52 00 80 00 ff 64 00 4f 00 80 00 ff 64 00 52 00 80 00 ff 
+64 00 5f 00 80 00 ff 64 00 69 00 80 00 ff 64 00 76 00 80 00 
+ff 64 00 74 00 80 00 ff 64 00 31 00 80 00 ff 64 00 0a 00 80 
+00 ff 04 0c 0c 0c 0c 0c 0c 
+
+
+=> .rel .ivt
+#  offset    relType        ref   sign   size
+   00000002  R_386_16       2      +      2
