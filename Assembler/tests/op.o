@@ -1,0 +1,23 @@
+
+=> symbol table
+# name                  sec  scope   value     num   size
+  text                	1    local   00000000  1     001d
+  add_func            	1    global  00000000  2     
+  sub_func            	1    global  00000004  3     
+  div_func            	1    global  00000008  4     
+  mul_func            	1    global  00000019  5     
+  end                 	1    local   00000015  6     
+
+
+=> classification index table
+# symbol                     section   index   expression
+
+
+=> .text
+6c 28 24 14 74 28 24 14 8c 00 00 00 28 34 00 15 00 84 28 24 
+14 1c 00 01 00 7c 28 24 14 
+
+
+=> .rel .text
+#  offset    relType        ref   sign   size
+   0000000f  R_386_16       1      +      2

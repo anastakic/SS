@@ -1,0 +1,35 @@
+
+=> symbol table
+# name                  sec  scope   value     num   size
+  timer               	1    local   00000000  1     0044
+  _start              	1    global  00000000  2     
+  data_out            	0    global  00000000  3     
+  data_in             	0    global  00000000  4     
+  timer_cfg           	0    global  00000000  5     
+  print_num           	0    global  00000000  6     
+# nula                	1    local   00000000  7     
+  for                 	1    local   0000001f  8     
+  ivt_timer           	1    local   00000023  9     
+  ivt_terminal        	1    local   00000038  10     
+
+
+=> classification index table
+# symbol                     section   index   expression
+
+
+=> .timer
+64 00 55 21 2c 64 00 38 00 80 06 00 64 00 23 00 80 04 00 64 
+00 01 00 80 00 00 64 00 00 00 20 2c 00 1f 00 6c 00 01 00 20 
+64 00 0a 00 80 00 00 4c 20 24 00 00 00 54 20 0c 04 4c 00 05 
+00 24 00 00 00 54 2a 0c 
+
+
+=> .rel .timer
+#  offset    relType        ref   sign   size
+   00000007  R_386_16       1      +      2
+   0000000e  R_386_16       1      +      2
+   00000018  R_386_16       5      +      2
+   00000021  R_386_16       1      +      2
+   0000002d  R_386_16       3      +      2
+   00000033  R_386_16       6      +      2
+   0000003f  R_386_16       6      +      2

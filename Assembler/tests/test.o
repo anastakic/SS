@@ -1,0 +1,15 @@
+
+=> symbol table
+# name                  sec  scope   value     num   size
+  text                	1    local   00000000  1     0015
+  _start              	1    global  00000000  2     
+
+
+=> classification index table
+# symbol                     section   index   expression
+
+
+=> .text
+60 00 99 80 a0 60 00 99 80 a2 60 00 99 80 a4 60 00 99 80 a6 
+04 
+
